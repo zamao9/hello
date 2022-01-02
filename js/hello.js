@@ -10,6 +10,8 @@ $(function() {
 
     $('.burger').toggleClass('active');
     $("#navigation").toggleClass('active');
+    $('.header').toggleClass('active');
+    $('body').toggleClass('lock');
 
   })
 
