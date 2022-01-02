@@ -563,6 +563,7 @@ a {
 
 .conection_arrow {
   transform: rotate(135deg);
+  border-color: #333;
 }
 
 
