@@ -15,7 +15,14 @@ $(function() {
 
   })
 
+  $('.links').click(function() {
 
+    $('.burger').removeClass('active');
+    $("#navigation").removeClass('active');
+    $('.header').removeClass('active');
+    $('body').removeClass('lock');
+
+  })
 
 
                           /* SCROLL */
