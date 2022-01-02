@@ -1,13 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
   <head>
 
     <meta charset="utf-8">
-    <title>Welcome To StartUp</title>
-    <link rel="stylesheet" href="css/startup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Hello</title>
+    <link rel="stylesheet" href="css/hello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
@@ -15,465 +14,126 @@
   <body>
 
     <!-- /.HEADER -->
-    <header class="header" id="header">
+    <header class="header">
 
-      <div class="header_content">
-        <div class="header_logo" data-scroll="#home">StartUp</div>
-
-        <nav class="nav" id="nav">
-          <a href="#" class="nav_links" data-scroll="#home">Home</a>
-          <a href="#" class="nav_links" data-scroll="#services">Services</a>
-          <a href="#" class="nav_links" data-scroll="#about">About</a>
-          <a href="#" class="nav_links" data-scroll="#works">Works</a>
-          <a href="#" class="nav_links" data-scroll="#blog">Blog</a>
-          <a href="#" class="nav_links" data-scroll="#clients">Clients</a>
-          <a href="#" class="nav_links" data-scroll="#contact">Contact</a>
-        </nav>
-
-        <div class="nav_toggle" id="nav_toggle" data-collapse="#nav">
-          <div class="nav_toggle_items"></div>
-        </div>
-
+      <div class="burger">
+        <div class="burger_items"><span class="burger_span"></span></div>
+        <div class="burger_tods"></div>
+        <div class="burger_tods1"></div>
       </div>
 
-    </header>
+    </header><!-- /.HEADER -->
+
+    <div class="nav" id="navigation">
+      <a href="index.html" class="links">Главная</a>
+    </div>
 
 
 
 
     <!-- /.INTRO -->
     <div class="intro" id="home">
-
       <div class="intro_content">
+        <h1 class="title intro_title">Привет;</h1>
+        <p class="text intro_text">Я Юлия Ванко, графический и веб-дизайнер.</p>
+        <div class="arrow intro_arrow" data-scroll="#cont"></div>
+      </div>
+    </div><!-- /.INTRO -->
 
-        <h2 class="intro_title">Welcome to startup</h2>
-        <p class="intro_subtitle">Your Favorite Creative Agency Template</p>
-        <a href="#"><button class="button intro_btn">get started</button></a>
+
+
+
+    <!-- /.SECTION -->
+    <section class="section">
+
+      <!-- /.CONTAINER1 -->
+    <div class="container container1" id="cont">
+
+      <div class="project cont1_p1">
+        <img src="img/projects/1.jpeg" alt="Проект 1">
+      </div>
+      <div class="project cont1_p2">
+        <img src="img/projects/2.jpeg" alt="Проект 2">
+      </div>
+      <div class="project cont1_p3">
+        <img src="img/projects/3.jpeg" alt="Проект 3">
+      </div>
+      <div class="project cont1_p4">
+        <img src="img/projects/4.jpeg" alt="Проект 4">
+      </div>
+      <div class="project cont1_p5">
+        <img src="img/projects/5.jpeg" alt="Проект 5">
+      </div>
+      <div class="project cont1_p6">
+        <img src="img/projects/6.jpeg" alt="Проект 6">
+      </div>
+
+    </div><!-- /.CONTAINER1 -->
+
+      <!-- /.CONTAINER2 -->
+    <div class="container container2">
+
+      <div class="project cont2_p1">
+        <img src="img/projects/7.jpeg" alt="Проект 1">
+      </div>
+      <div class="project cont2_p2">
+        <img src="img/projects/8.png" alt="Проект 2">
+      </div>
+      <div class="project cont2_p3">
+        <img src="img/projects/9.jpeg" alt="Проект 3">
+      </div>
+      <div class="project cont2_p4">
+        <img src="img/projects/10.jpeg" alt="Проект 4">
+      </div>
+
+    </div><!-- /.CONTAINER2 -->
+
+      <!-- /.CONTAINER3 -->
+    <div class="container container3">
+
+      <div class="project cont3_p1">
+        <img src="img/projects/11.jpeg" alt="Проект 1">
+      </div>
+      <div class="project cont3_p2">
+        <img src="img/projects/12.jpeg" alt="Проект 2">
+      </div>
+      <div class="project cont3_p3">
+        <img src="img/projects/13.jpeg" alt="Проект 3">
+      </div>
+
+    </div><!-- /.CONTAINER3 -->
+
+    </section><!-- /.SECTION -->
+
+
+
+
+    <!-- /.SECTION -->
+    <section class="section conection_section">
+
+      <!-- /.CONTAINER -->
+      <div class="container conection_container">
+
+        <h3 class="title conection_title">Юлия Ванко — графический и веб-дизайнер</h3>
+        <p class="text conection_text">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Здесь вы можете рассказать посетителям подробнее о себе.</p>
+        <h3 class="title conection_title">Свяжитесь со мной:</h3>
+        <input type="text" class="input" placeholder="Имя">
+        <input type="email" class="input" placeholder="Эл. почта">
+        <textarea type="text" class="textarea" placeholder="Добавьте сообщение..."></textarea>
+        <button class="btn">Отправить</button>
+        <div class="arrow conection_arrow" data-scroll="#home"></div>
 
       </div>
 
-    </div>
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section" id="services">
-
-      <div class="secion_header">services</div>
-      <hr>
-      <p class="section_subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
-
-      <!-- /.CONTAINER -->
-      <div class="container services_container">
-
-        <div class="services_items">
-
-          <i class="fas fa-mask services_icon"></i>
-          <p class="services_subtitle">clean typography</p>
-          <p class="services_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          <a href="#" class="services_items_link"></a>
-
-        </div>
-
-        <div class="services_items">
-
-          <i class="fas fa-mask services_icon"></i>
-          <p class="services_subtitle">rock solid code</p>
-          <p class="services_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          <a href="#" class="services_items_link"></a>
-
-        </div>
-
-        <div class="services_items">
-
-          <i class="fas fa-mask services_icon"></i>
-          <p class="services_subtitle">expert support</p>
-          <p class="services_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          <a href="#" class="services_items_link"></a>
-
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
     </section><!-- /.SECTION -->
 
 
 
 
-    <!-- /.SECTION -->
-    <section class="section about_us" id="about">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/hello.js"></script>
 
-      <div class="secion_header">about us</div>
-      <hr>
-      <p class="section_subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
-
-      <!-- /.CONTAINER -->
-      <div class="container">
-
-        <div class="about_us_items">
-          <div class="about_us_head">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</div>
-          <div class="about_us_head">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</div>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-      <!-- /.CONTAINER -->
-      <div class="container about_us_img">
-
-          <div class="about_us_body_all">
-            <div class="about_us_body_content">
-              <img src="img/about_us/1.jpeg">
-              <div class="about_us_icon_items">
-                <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square about_us_icon"></i></a>
-                <a  href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square about_us_icon"></i></a>
-                <a href="https://www.google.ru/" target="_blank"><i class="fab fa-google-plus-square about_us_icon"></i></a>
-                <a href="https://ru.linkedin.com/" target="_blank"><i class="fab fa-linkedin about_us_icon"></i></a>
-              </div>
-            </div>
-            <p class="about_us_body_subtitle">susan does</p>
-            <p class="about_us_body_text">Head of Ideas</p>
-          </div>
-
-          <div class="about_us_body_all">
-            <div class="about_us_body_content">
-              <img src="img/about_us/2.jpeg">
-              <div class="about_us_icon_items">
-                <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square about_us_icon"></i></a>
-                <a  href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square about_us_icon"></i></a>
-                <a href="https://www.google.ru/" target="_blank"><i class="fab fa-google-plus-square about_us_icon"></i></a>
-                <a href="https://ru.linkedin.com/" target="_blank"><i class="fab fa-linkedin about_us_icon"></i></a>
-              </div>
-            </div>
-            <p class="about_us_body_subtitle">loes mia</p>
-            <p class="about_us_body_text">Sr. Web Developer</p>
-          </div>
-
-          <div class="about_us_body_all">
-            <div class="about_us_body_content">
-              <img src="img/about_us/3.jpeg">
-              <div class="about_us_icon_items">
-                <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square about_us_icon"></i></a>
-                <a  href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square about_us_icon"></i></a>
-                <a href="https://www.google.ru/" target="_blank"><i class="fab fa-google-plus-square about_us_icon"></i></a>
-                <a href="https://ru.linkedin.com/" target="_blank"><i class="fab fa-linkedin about_us_icon"></i></a>
-              </div>
-            </div>
-            <p class="about_us_body_subtitle">rachel doe</p>
-            <p class="about_us_body_text">Front-end Developer</p>
-          </div>
-
-          <div class="about_us_body_all">
-            <div class="about_us_body_content">
-              <img src="img/about_us/4.jpeg">
-              <div class="about_us_icon_items">
-                <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square about_us_icon"></i></a>
-                <a  href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square about_us_icon"></i></a>
-                <a href="https://www.google.ru/" target="_blank"><i class="fab fa-google-plus-square about_us_icon"></i></a>
-                <a href="https://ru.linkedin.com/" target="_blank"><i class="fab fa-linkedin about_us_icon"></i></a>
-              </div>
-            </div>
-            <p class="about_us_body_subtitle">kali miah</p>
-            <p class="about_us_body_text">Lead WordPress Developer</p>
-          </div>
-
-      </div><!-- /.CONTAINER -->
-
-
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section" id="works">
-
-      <div class="secion_header">Latest Works</div>
-      <hr>
-      <nav class="works_nav">
-        <a class="works_links" data-filter="all">All</a>
-        <a class="works_links" data-filter="branding">Branding</a>
-        <a class="works_links" data-filter="design">Design</a>
-        <a class="works_links" data-filter="development">Development</a>
-        <a class="works_links" data-filter="strategy">Strategy</a>
-      </nav>
-
-      <!-- /.CONTAINER -->
-      <div class="container cont_work">
-
-        <div class="works_img design">
-          <img src="img/img/1.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">Interier</p>
-            <p class="works_text">Design</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img development">
-          <img src="img/img/2.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">1</p>
-            <p class="works_text">1</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img branding">
-          <img src="img/img/3.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">2</p>
-            <p class="works_text">2</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img strategy">
-          <img src="img/img/4.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">3</p>
-            <p class="works_text">3</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img design">
-          <img src="img/img/5.jpg">
-          <div class="works_img_content">
-            <p class="works_subtitle">4</p>
-            <p class="works_text">4</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img branding">
-          <img src="img/img/6.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">5</p>
-            <p class="works_text">5</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img development">
-          <img src="img/img/7.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">6</p>
-            <p class="works_text">6</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img design">
-          <img src="img/img/8.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">7</p>
-            <p class="works_text">7</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-        <div class="works_img strategy">
-          <img src="img/img/9.jpeg">
-          <div class="works_img_content">
-            <p class="works_subtitle">8</p>
-            <p class="works_text">8</p>
-            <a href="#"><button class="works_btn">view ></button></a>
-          </div>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section back2">
-
-      <!-- /.CONTAINER -->
-      <div class="container">
-
-        <div class="back2_content">
-          <h2 class="back2_title">Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h2>
-          <a href="#"><button class="button back2_btn">get in touch</button></a>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section" id="blog">
-
-      <div class="secion_header">recent blog posts</div>
-      <hr>
-      <p class="section_subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
-
-      <!-- /.CONTAINER -->
-      <div class="container">
-
-        <div class="blog_items">
-          <div class="blog_img">
-            <img src="img/blog/1.jpeg">
-          </div>
-          <div class="blog_content">
-            <p class="blog_data">18<br>oct</p>
-            <p class="blog_title">stuetup ideas needs to be funded</p>
-            <p class="blog_subtitle">By <span>Rachel</span> Doe in <span>Front-end Developer</span></p>
-            <p class="blog_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          </div>
-        </div>
-
-        <hr class="hr_blog">
-
-        <div class="blog_items">
-          <div class="blog_img">
-            <img src="img/blog/2.jpeg">
-          </div>
-          <div class="blog_content">
-            <p class="blog_data">18<br>oct</p>
-            <p class="blog_title">user interface designing elements</p>
-            <p class="blog_subtitle">By <span>Loes</span> Mid in <span>Sr. Web Developer</span></p>
-            <p class="blog_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          </div>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section brands" id="clients">
-
-      <!-- /.CONTAINER -->
-      <div class="container cont_brands">
-
-        <!-- /.SLIDER -->
-        <div class="slider">
-
-          <div class="brands_brands">
-            <a href="https://aviato.me/" target="_blank"><i class="fab fa-aviato brand_icons"></i></a>
-          </div>
-          <div class="brands_brands">
-            <a href="https://emberjs.com/" target="_blank"><i class="fab fa-ember brand_icons"></i></a>
-          </div>
-          <div class="brands_brands">
-            <a href="https://www.ebay.com/" target="_blank"><i class="fab fa-ebay brand_icons"></i></a>
-          </div>
-          <div class="brands_brands">
-            <a href="https://www.fedex.com/ru-ru/home.html" target="_blank"><i class="fab fa-fedex brand_icons"></i></a>
-          </div>
-          <div class="brands_brands">
-            <a href="https://www.dndbeyond.com/" target="_blank"><i class="fab fa-d-and-d-beyond brand_icons"></i></a>
-          </div>
-          <div class="brands_brands">
-            <a href="https://express.dhl.ru/" target="_blank"><i class="fab fa-dhl brand_icons"></i></a>
-          </div>
-
-        </div><!-- /.SLIDER -->
-
-        <div class="brands_content">
-          <p class="brands_text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet. Minima maxime quam architecto quo inventore harum ex maqni, dicta impedit</p>
-          <p class="brands_subtitle">Rachel Doe, Google Inc.</p>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section" id="contact">
-
-      <div class="secion_header">get in touch</div>
-      <hr>
-      <p class="section_subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
-
-      <!-- /.CONTAINER -->
-      <div class="conteiner in_touch">
-
-        <div class="container touch_cont1">
-          <div class="touch_items_head">
-            <i class="fas fa-map-marker-alt touch_icon"></i>
-            <p class="touch_subtitle">Adress</p>
-            <div class="touch_text_block">
-              <p class="touch_text">317, 7th Ave, New-York<br>NY 101200, United States of America </p>
-            </div>
-          </div>
-
-          <div class="touch_items_head">
-            <i class="fas fa-mobile-alt touch_icon"></i>
-            <p class="touch_subtitle">hotline (24x7)</p>
-            <div class="touch_text_block">
-              <p class="touch_text"><a href="tel:+65 0052 300" class="touch_text">+65 0052 300</a>, <a href="tel:+65 88251 210" class="touch_text">+65 88251 210</a><br><a href="tel:+88 2511 340" class="touch_text">+88 2511 340</a></p>
-            </div>
-
-          </div>
-
-          <div class="touch_items_head">
-            <i class="fas fa-envelope touch_icon"></i>
-            <p class="touch_subtitle">e-mail</p>
-            <div class="touch_text_block">
-              <p class="touch_text"><a href="mailto:shapedtheme@gmail.com" class="touch_text">shapedtheme@gmail.com</a><br><a href="mailto:rachelcode@gmail.com" class="touch_text">rachelcode@gmail.com</a></p>
-            </div>
-          </div>
-        </div>
-
-        <hr class="touc_hr">
-
-        <div class="touch_cont2">
-          <input class="touch_input" type="tel" placeholder="your number">
-          <input class="touch_input" type="email" placeholder="your e-mail">
-          <input class="touch_input" placeholder="your subject">
-          <input class="touch_input" placeholder="company name">
-          <textarea class="touch_input_massage" placeholder="write your massage"></textarea>
-          <button class="touch_btn">send massage</button>
-        </div>
-
-      </div><!-- /.CONTAINER -->
-
-
-    </section><!-- /.SECTION -->
-
-
-
-
-    <!-- /.SECTION -->
-    <section class="section back3">
-
-      <div class="secion_header back3_1">
-        <a  href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square back3_icon"></i></a>
-        <a  href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square back3_icon"></i></a>
-        <a href="https://www.google.ru/" target="_blank"><i class="fab fa-google-plus-square back3_icon"></i></a>
-        <a href="https://ru.linkedin.com/" target="_blank"><i class="fab fa-linkedin back3_icon"></i></a>
-      </div>
-      <hr class="back3_2">
-      <p class="section_subtitle back3_3">2015 startup. designed by shapedtheme</p>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/startup.js"></script>
   </body>
+
+
+</html>
