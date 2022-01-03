@@ -36,7 +36,7 @@ body:after {
   right: 0;
   bottom: 0;
 
-  background: linear-gradient(to bottom, #7525b9, #89deff);
+  background: linear-gradient(to bottom, #89deff, #7525b9);
   opacity: 0.3;
   background-attachment: fixed;
 }
@@ -68,7 +68,6 @@ a {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
-  text-shadow: 0 0 2px #fff;
 }
 
 .text {
@@ -76,7 +75,6 @@ a {
   text-align: center;
   color: #333;
   margin-bottom: 15px;
-  text-shadow: 0 0 2px #fff;
 }
 
 
@@ -85,13 +83,9 @@ a {
 /* HEADER */
 .header.active {
   position: fixed;
+  z-index: 100;
 }
 .header {
-  position: absolute;
-  z-index: 100;
-  left: 50%;
-  transform: translateX(-50%);
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -349,8 +343,20 @@ a {
 
 
 
+.line.active {
+  display: block;
+}
+.line {
+  display: none;
+  width: 100%;
+  height: 85px;
+}
+
+
+
 /* INTRO */
 .intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -367,12 +373,14 @@ a {
 
 .intro_title {
   font-size: 55px;
-  color: #fff;
+  color: #333;
+  text-shadow: 0 0 2px #333;
 }
 
 .intro_text {
   font-size: 22px;
-  color: #fff;
+  color: #333;
+  text-shadow: 0 0 2px #333;
 }
 
 .arrow {
@@ -381,8 +389,8 @@ a {
 
   cursor: pointer;
 
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-bottom: 2px solid #333;
+  border-left: 2px solid #333;
   border-radius: 2px;
 
   margin: 0 auto;
@@ -393,7 +401,7 @@ a {
   transition: all 0.3s ease;
 }
 .intro_arrow:hover {
-  border-color: #333;
+  border-color: #fff;
 }
 
 
@@ -587,6 +595,12 @@ a {
   background-color: #333;
   box-shadow: 0 0 2px #333;
   border-radius: 20px;
+  border: 2px solid #fff;
+}
+.textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 0 2px #333 inset;
 }
 .textarea::-webkit-scrollbar-track {
   padding: 0 15px;
@@ -617,7 +631,6 @@ a {
 
 .conection_arrow {
   transform: rotate(135deg);
-  border-color: #333;
   transition: all 0.3s ease;
 }
 .conection_arrow:hover {
@@ -646,9 +659,124 @@ a {
 .footer_text a {
   transition: all 0.3s ease;
   color: #333;
+  font-weight: 600;
 }
 .footer_text a:hover {
   text-shadow: 0 0 2px #333;
+  font-weight: 600;
+}
+
+
+
+
+/* BLOCK */
+.block {
+  width: 100%;
+  max-width: 1200px;
+
+  padding: 0 15px;
+  margin: 0 auto 20px;
+}
+
+.block_content {
+  background-color: #b1e9ff;
+  padding: 50px 15px;
+}
+
+.block_content_link {
+  position: relative;
+  display: block;
+  text-align: left;
+  font-weight: 300;
+
+  transition: all 0.3s ease;
+  margin: 0 0 30px 30px;
+}
+.block_content_link:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease;
+
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  margin-right: 5px;
+}
+.block_content_link:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 16px;
+  transition: all 0.3s ease;
+
+  background-color: #b1e9ff;
+  margin-right: 2px;
+}
+.block_content_link:hover {
+  text-shadow: 0 0 2px #333;
+}
+.block_content_link:hover:before {
+  box-shadow: 0 0 2px #333;
+}
+
+.block_content_text {
+  max-width: 500px;
+  margin: 0 auto 50px;
+}
+
+.block_img {
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+
+  cursor: pointer;
+  position: relative;
+  background-color: #000;
+  margin: 0 auto 30px;
+}
+.block_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.block_img:hover img {
+  opacity: 0.7;
+}
+
+.block_img_items {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 30px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.block_img:hover
+.block_img_items {
+  opacity: 1;
+}
+
+.block_img_items_title {
+  text-align: left;
+  color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.block_img_items_text {
+  text-align: left;
+  color: #fff;
 }
 
 
@@ -682,6 +810,15 @@ a {
 
     background: none;
     padding: 20px 15px;
+  }
+
+  .links {
+    color: #333;
+    text-shadow: 0 0 2px #333;
+  }
+  .links:hover {
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
   }
 
   /* CONTAINER */
@@ -829,6 +966,11 @@ a {
 
   .btn {
     width: 200px;
+  }
+
+  /* BLOCK */
+  .block_img {
+    height: 350px;
   }
 }
 

@@ -11,7 +11,9 @@ $(function() {
     $('.burger').toggleClass('active');
     $("#navigation").toggleClass('active');
     $('.header').toggleClass('active');
+    $('.line').toggleClass('active');
     $('body').toggleClass('lock');
+
 
   })
 
@@ -20,6 +22,7 @@ $(function() {
     $('.burger').removeClass('active');
     $("#navigation").removeClass('active');
     $('.header').removeClass('active');
+    $('.line').removeClass('active');
     $('body').removeClass('lock');
 
   })
