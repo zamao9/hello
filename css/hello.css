@@ -390,6 +390,10 @@ a {
 
 .intro_arrow {
   transform: rotate(-45deg);
+  transition: all 0.3s ease;
+}
+.intro_arrow:hover {
+  border-color: #333;
 }
 
 
@@ -476,23 +480,27 @@ a {
   border: 0.5px solid #333;
   cursor: pointer;
   text-shadow: none;
+  font-size: 18px;
   font-weight: 300;
   font-family: 'Cormorant Garamond', serif;
 
-  transition: all 0.1s ease;
+  transition: box-shadow 0.1s ease, background 0.3s ease;
   background-color: transparent;
   padding: 8px 15px;
   margin: 0 auto 5px;
 }
 .input:hover {
   box-shadow: 0 0 2px #333 inset;
+  background-color: #fff;
 }
 .input::placeholder {
+  font-size: 18px;
   color: #333;
   font-family: 'Cormorant Garamond', serif;
 }
 .input:focus {
   outline: none;
+  background-color: #fff;
   box-shadow: 0 0 2px #333 inset;
 }
 
@@ -506,25 +514,29 @@ a {
   cursor: pointer;
   text-shadow: none;
   color: #333;
+  font-size: 18px;
   font-weight: 300;
   font-family: 'Cormorant Garamond', serif;
   resize: none;
 
-  transition: all 0.1s ease;
+  transition: box-shadow 0.1s ease, background 0.3s ease;
   background-color: transparent;
   padding: 8px 15px;
   margin: 0 auto 5px;
 }
 .textarea:hover {
   box-shadow: 0 0 2px #333 inset;
+  background-color: #fff;
 }
 .textarea::placeholder {
+  font-size: 18px;
   color: #333;
   font-family: 'Cormorant Garamond', serif;
 }
 .textarea:focus {
   outline: none;
   box-shadow: 0 0 2px #333 inset;
+  background-color: #fff;
 }
 .textarea::-webkit-scrollbar {
   background-color: transparent;
@@ -546,10 +558,11 @@ a {
   color: #fff;
   text-shadow: none;
   font-weight: 300;
+  font-size: 18px;
   font-family: 'Cormorant Garamond', serif;
   cursor: pointer;
 
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   border: 0.5px solid #333;
   padding: 10px 15px;
   margin: 0 auto 50px;
@@ -564,10 +577,38 @@ a {
 .conection_arrow {
   transform: rotate(135deg);
   border-color: #333;
+  transition: all 0.3s ease;
+}
+.conection_arrow:hover {
+  border-color: #fff;
 }
 
 
 
+
+/* FOOTER */
+.footer_section {
+  background-color: #fff;
+}
+
+.footer {
+  width: 100%;
+  max-width: 500px;
+
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.footer_text {
+  margin: 0 auto;
+}
+.footer_text a {
+  transition: all 0.3s ease;
+  color: #333;
+}
+.footer_text a:hover {
+  text-shadow: 0 0 2px #333;
+}
 
 
 
