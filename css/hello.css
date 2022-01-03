@@ -584,8 +584,8 @@ a {
   width: 10px;
 }
 .textarea::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  box-shadow: 0 0 2px #fff;
+  background-color: #333;
+  box-shadow: 0 0 2px #333;
   border-radius: 20px;
 }
 .textarea::-webkit-scrollbar-track {
