@@ -425,6 +425,8 @@ a {
   height: 130px;
   min-width: 0;
 
+  position: relative;
+
   background-color: #000;
   cursor: pointer;
   overflow: hidden;
@@ -437,8 +439,26 @@ a {
   transition: opacity 0.3s ease, transform 2s ease;
 }
 .project:hover img {
-  opacity: 0.8;
+  opacity: 0.7;
   transform: scale(1.05);
+}
+
+.project_text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-shadow: 0 0 2px #fff;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  transition: all 1s ease;
+}
+.project:hover
+.project_text {
+  opacity: 1;
 }
 
 .container3 {
@@ -470,6 +490,27 @@ a {
   text-shadow: none;
 
   margin: 0 auto 50px;
+}
+
+.conection_icons {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto 30px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  padding: 0 15px;
+}
+.icon:hover {
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
 }
 
 .input {
